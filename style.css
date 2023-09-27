@@ -173,23 +173,31 @@ a {
 /* -------  Join media queries  ------- */
 
 @media screen and (min-width: 768px) {
+  .Join {
+    flex-direction: row;
+    gap: 12px;
+    padding: 24px;
+  }
+
   .Join_img {
-    width: 80%;
+    flex: 1;
+    width: 60%;
+    min-height: 460px;
+  }
+
+  .Join_content {
+    flex: 2;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .Join {
-    flex-direction: row;
+    gap: 24px;
+    padding: 32px;
   }
 
   .Join_img {
-    flex: 1;
     width: 65%;
-  }
-
-  .Join_content {
-    flex: 2;
   }
 }
 
